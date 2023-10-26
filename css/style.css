@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Kyokasho;
+    src: url('../fonts/UDDigiKyokashoN-R.ttc');
+}
+
+@font-face {
+    font-family: KyokashoBold;
+    src: url('../fonts/UDDigiKyokashoN-B.ttc');
+}
+
+@font-face {
+    font-family: NotoSansJP;
+    src: url('../fonts/NotoSansJP-Regular.ttf');
+}
+
+*{margin: 0; padding: 0;}
+*,*::before, *::after{box-sizing: border-box;}
+p{margin-bottom: 0; font-size: 28px}
+a{color: black; transition: all .4s; text-decoration: none}
+a:hover{text-decoration: none;  transition: all .4s; color: #FABE29}
+ul{list-style: none;margin-bottom: 0}
+/*@media (min-width: 1400px){*/
+    /*.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {*/
+    /*    max-width: 1445px;*/
+    /*}}*/
+:root{
+    --color-yellow: #F2AE2E;
+}
+body{
+    font-size: 16px;
+    font-family: "NotoSansJP";
+    color: black;
+}
+/*h1,h2,h3,h4,h5,h6{font-family: KyokashoBold}*/
+h1{font-size: 96px;}
+h2{font-size: 64px}
+h3{font-size: 44px}
+h4{font-size: 32px}
+.font-bold{font-family: KyokashoBold}
+.color-yellow{color: var(--color-yellow) !important;}
+.padding-main{padding: 45px 0}
+.title-bg{position: relative; display: flex; padding: 10px 0; align-items: center; justify-content: center; margin-bottom: 60px}
+.title-bg img{position: absolute; height: 100%}
+.title-bg span{position: relative; z-index: 99; color: white;}
+
+#header-main{position: fixed; z-index: 999; background-color: white; width: 100%; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;}
+#header-main .logo img{max-width: 150px}
+#header-main{display: flex; justify-content: space-between; align-items: center; padding: 20px 50px}
+#header-main .menu{display: flex}
+#header-main .menu .nav-desk ul{display: flex; height: 100%; align-items: center}
+#header-main .menu .nav-desk ul li:nth-child(n+2){margin-left: 30px}
+#header-main .menu .first-link{background-color: #FABE29; color: white; border-bottom-left-radius: 10px; padding: 5px 10px; margin: 0 30px  }
+#header-main .menu .first-link:hover{background-color: #cf9b18}
+#header-main .menu .second-link{background-color: #74BF04; color: white; border-bottom-left-radius: 10px; padding: 5px 10px}
+#header-main .menu .second-link:hover{background-color: #558A05}
+
+
+#banner-home{position: relative; box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;}
+#banner-home .main-bg{max-height: 100vh}
+#banner-home .sub-bg{position: absolute; bottom: 0; left: 0}
+#banner-home .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center}
+#banner-home .content h2{ color: #f99c2b; font-size: 80px}
+#banner-home .content h2 span{-webkit-text-stroke: 2px white;}
+
+#introduce .image-introduce{display: flex; align-items: center;}
+#introduce .content-introduce h3{text-align: left;}
+#introduce .content-introduce{display: flex; align-items: center}
+
+#feature .content{background-image: url("../images/bg-yellow.png"); background-size: cover; padding: 350px 0}
+#feature .content .item-content{margin-bottom: 50px; padding: 0 64px}
+#feature .content .item-content h4{position: relative; display: inline-block; padding-bottom: 15px; margin-bottom: 20px}
+#feature .content .item-content h4:before{content: "";height: 5px; background-color: white; width: 100%; position: absolute; bottom: 0; left: 0}
+#feature .content .item-content p{margin-left: 96px}
+
+#example h4{color: #F36D3D}
+#example .item-content{margin-bottom: 60px}
+#example .item-content h4{ margin-bottom: 30px}
+#example .item-content .content p{width: 90%}
+#example .item-content .img img{width: 90%}
+#example .title-bg{margin-bottom: 80px}
+#example .list-example{padding: 0 100px}
+#example .list-example > div:nth-child(even){text-align: center}
+#example .list-example > div:nth-child(odd){text-align: center}
+
+#flow .list-step-first-second{display: flex; justify-content: space-evenly; align-items: center; margin-top: 50px}
+#flow .step-circle{position: relative}
+#flow  .step-circle .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column}
+#flow  .step-circle .content p{font-size: 25px; text-align: center}
+#flow  .step-circle .step-name{border-radius: 50%; border: 2px solid #F2AE2E; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; transform: rotate(-25deg); position: absolute; left: -50px }
+#flow .list-step-third-four{display: flex; justify-content: space-evenly; margin-top: 50px}
+#flow .list-step-third-four .step-four .top{position: relative}
+#flow .list-step-third-four .step-four .content{position: absolute; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; top: 0; left: 0; flex-direction: column}
+#flow .step-five{position: relative; text-align: center; margin-top: 50px}
+#flow .step-five .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center}
+#flow .wrap-step .arrow-2{position: absolute; right: 0; top: 50%; transform: translate(-50%, -65%)}
+
+#price .table-price .title-table{color: #74BF04}
+#price .table-price table{text-align: center; --bs-border-opacity: 1;border-color: #74BF04}
+#price .table-price table thead tr th{background-color: #74BF04; color: white; width: 33%}
+#price .table-price table tbody tr td{vertical-align: middle}
+#price .table-price:nth-child(n+2){margin-top: 50px}
+
+footer{background-color: #EDEDED; padding: 25px 0}
+footer .logo{display: flex; align-items: center; justify-content: center}
+footer .logo img{max-width: 50%; }
+footer ul li:nth-child(n+2){margin-top: 25px}
+footer p{font-size: 16px}
+
+#contact .contact-info{position: relative}
+#contact .contact-info ul{position: relative;list-style: square;align-items: center; padding: 30px 100px }
+#contact .contact-info ul li{font-size: 22px}
+#contact .contact-info ul li:nth-child(n+2){margin-top: 5px}
+#contact .contact-info img{position: absolute; height: 100%; width: 100%}
+#contact form{margin-top: 50px;background-color: #C6C6C6; padding: 60px}
+#contact form .form-control-plaintext{background-color: white; border-radius: 7px; height: 50px; padding-left: 15px}
+#contact form .form-control{background-color: white; border-radius: 7px; padding-left: 15px}
+#contact form label{font-size: 22px}
+#contact button{margin: 30px auto 0 auto}
