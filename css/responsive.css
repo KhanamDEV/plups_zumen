@@ -5,6 +5,7 @@
     #header-main{flex-direction: column; align-items: start}
 }
     @media (max-width: 475px) {
+        #feature .content .item-content h4:before{display: none}
     h1{font-size: 96px;}
     h2{font-size: 44px}
     h3{font-size: 20px}
