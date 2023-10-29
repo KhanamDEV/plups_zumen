@@ -1,9 +1,13 @@
-@media (max-width: 475px) {
+@media (max-width: 769px) {
+    #banner-home .content h2{font-size: 30px; text-align: center}
+    #banner-home .content h2 span{-webkit-text-stroke: 0.5px white}
+}
+    @media (max-width: 475px) {
     h1{font-size: 96px;}
     h2{font-size: 44px}
-    h3{font-size: 28px}
-    h4{font-size: 26px}
-    p{font-size: 20px}
+    h3{font-size: 20px}
+    h4{font-size: 18px}
+    p{font-size: 16px}
     main{margin-top: 85px}
     #header-main{padding: 15px}
     #header-main #nav{display: none}
@@ -43,13 +47,14 @@
     #flow .step-five{margin-top: 10px}
     #flow .step-five img{display: none}
     #flow .step-five .content{position: relative; background-image: url("../images/bg_step_5.png") ;padding: 15px; background-size: 100% 100%; background-repeat: no-repeat}
-    #banner-home .content h2{font-size: 24px}
-    #banner-home .content h2 span{-webkit-text-stroke: unset}
-    #introduce .content-introduce h3{text-align: center}
+    #banner-home .content h2{font-size: 21px; text-align: center}
+    #banner-home .content h2 span{-webkit-text-stroke: 0.5px white}
+    #introduce .content-introduce h3{text-align: center;
+        width: 100%;}
     .padding-main {
         padding: 20px 0;
     }
-    #feature .content{background-image: none; padding: 0}
+    #feature .content{background-size: 1000% 1000%; background-position: center;background-repeat: no-repeat;  padding: 20px 0 5px 0 ; }
     #feature .content .item-content{padding: 0; margin-bottom: 30px}
     #feature .content .item-content p{margin-left: 40px}
     #feature .content .item-content h4{margin-bottom: 0}
@@ -61,4 +66,5 @@
     #example .item-content .img img{width: 100%}
     #example .item-content .content p{width: 100%}
     #example .title-bg{margin-bottom: 30px}
+        #contact .contact-info ul li{font-size: 18px}
 }
