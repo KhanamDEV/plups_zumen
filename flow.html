@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="<?php asset('images/logo.png'); ?>">
-    <title><?php echo get_bloginfo(); ?></title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <title>外構・庭の図面作成代行サービス</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css">
@@ -21,21 +21,35 @@
 </div>
 <header id="header-main">
     <div class="logo">
-        <a href="<?php echo home_url(); ?>">
+        <a href="./index.html">
             <img class="mr-2" src="./images/logo.png" alt="">
-            外構・庭の図面作成代行サービス
+            <span>外構・庭の図面作成代行サービス</span>
         </a>
-
+        <i class="fa-solid fa-bars open-nav-mobile"></i>
     </div>
     <div class="menu">
         <nav id="nav" class="nav-desk">
-            <ul id="menu-header-menu" class="box-header menu-header"><li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="#">依頼の流れ</a></li>
-                <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#">納品事例</a></li>
+            <ul id="menu-header-menu" class="box-header menu-header"><li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="./flow.html#flow">依頼の流れ</a></li>
+                <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="./index.html#example">納品事例</a></li>
             </ul>            </nav>
-        <a href="#" class="first-link ">会員ページ</a>
-        <a href="#" class="second-link">お問い合わせ・資料請求</a>
+        <!--        <a href="#" class="first-link ">会員ページ</a>-->
+        <a href="./contact.html" class="second-link">お問い合わせ・資料請求</a>
+        <nav id="nav-mobile">
+            <div class="close-menu">
+                <i class="fa-solid fa-xmark "></i>
+
+            </div>
+            <ul  class="box-header menu-header">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="./flow.html#flow">依頼の流れ</a></li>
+                <div class="line"></div>
+                <li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="./index.html#example">納品事例</a></li>
+                <div class="line"></div>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"> <a href="./contact.html">お問い合わせ・資料請求</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
+
 <main>
     <section id="banner-home">
         <img class="w-100 main-bg" src="./images/banner.png" alt="">

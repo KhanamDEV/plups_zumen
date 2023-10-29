@@ -15,7 +15,7 @@
 
 *{margin: 0; padding: 0;}
 *,*::before, *::after{box-sizing: border-box;}
-p{margin-bottom: 0; font-size: 28px}
+p{margin-bottom: 0; font-size: 24px}
 a{color: black; transition: all .4s; text-decoration: none}
 a:hover{text-decoration: none;  transition: all .4s; color: #FABE29}
 ul{list-style: none;margin-bottom: 0}
@@ -28,14 +28,19 @@ ul{list-style: none;margin-bottom: 0}
 }
 body{
     font-size: 16px;
-    font-family: "NotoSansJP";
+    font-family: "Kyokasho";
     color: black;
 }
 /*h1,h2,h3,h4,h5,h6{font-family: KyokashoBold}*/
+/*h1{font-size: 96px;}*/
+/*h2{font-size: 64px}*/
+/*h3{font-size: 44px}*/
+/*h4{font-size: 32px}*/
+main{margin-top: 95px}
 h1{font-size: 96px;}
-h2{font-size: 64px}
-h3{font-size: 44px}
-h4{font-size: 32px}
+h2{font-size: 44px}
+h3{font-size: 32px}
+h4{font-size: 28px}
 .font-bold{font-family: KyokashoBold}
 .color-yellow{color: var(--color-yellow) !important;}
 .padding-main{padding: 45px 0}
@@ -43,7 +48,7 @@ h4{font-size: 32px}
 .title-bg img{position: absolute; height: 100%}
 .title-bg span{position: relative; z-index: 99; color: white;}
 
-#header-main{position: fixed; z-index: 999; background-color: white; width: 100%; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;}
+#header-main{top: 0;position: fixed; z-index: 999; background-color: white; width: 100%; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;}
 #header-main .logo img{max-width: 150px}
 #header-main{display: flex; justify-content: space-between; align-items: center; padding: 20px 50px}
 #header-main .menu{display: flex}
@@ -51,9 +56,10 @@ h4{font-size: 32px}
 #header-main .menu .nav-desk ul li:nth-child(n+2){margin-left: 30px}
 #header-main .menu .first-link{background-color: #FABE29; color: white; border-bottom-left-radius: 10px; padding: 5px 10px; margin: 0 30px  }
 #header-main .menu .first-link:hover{background-color: #cf9b18}
-#header-main .menu .second-link{background-color: #74BF04; color: white; border-bottom-left-radius: 10px; padding: 5px 10px}
+#header-main .menu .second-link{margin-left: 30px;background-color: #74BF04; color: white; border-bottom-left-radius: 10px; padding: 5px 10px}
 #header-main .menu .second-link:hover{background-color: #558A05}
-
+#header-main #nav-mobile{display: none}
+#header-main .open-nav-mobile{display: none}
 
 #banner-home{position: relative; box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;}
 #banner-home .main-bg{max-height: 100vh}
@@ -103,10 +109,10 @@ h4{font-size: 32px}
 footer{background-color: #EDEDED; padding: 25px 0}
 footer .logo{display: flex; align-items: center; justify-content: center}
 footer .logo img{max-width: 50%; }
-footer ul li:nth-child(n+2){margin-top: 25px}
+footer ul li:nth-child(n+2){margin-top: 15px}
 footer p{font-size: 16px}
 
-#contact .contact-info{position: relative}
+#contact .contact-info{position: relative; margin-top: 3rem}
 #contact .contact-info ul{position: relative;list-style: square;align-items: center; padding: 30px 100px }
 #contact .contact-info ul li{font-size: 22px}
 #contact .contact-info ul li:nth-child(n+2){margin-top: 5px}
@@ -116,3 +122,4 @@ footer p{font-size: 16px}
 #contact form .form-control{background-color: white; border-radius: 7px; padding-left: 15px}
 #contact form label{font-size: 22px}
 #contact button{margin: 30px auto 0 auto}
+

@@ -1,0 +1,64 @@
+@media (max-width: 475px) {
+    h1{font-size: 96px;}
+    h2{font-size: 44px}
+    h3{font-size: 28px}
+    h4{font-size: 26px}
+    p{font-size: 20px}
+    main{margin-top: 85px}
+    #header-main{padding: 15px}
+    #header-main #nav{display: none}
+    #header-main .second-link{display: none}
+    #header-main .logo{display: flex; justify-content: space-between; align-items: center; width: 100%}
+    #header-main .logo img{display: block; }
+    #header-main .logo span{display: none}
+    #header-main .open-nav-mobile{display: block; font-size: 23px}
+    #header-main #nav-mobile{display: block; height: 100vh; background-color: white; position: absolute; top: 0; right: -100%;
+        padding: 20px;
+        transition: all 0.3s;
+    }
+    #header-main #nav-mobile.open{right: 0;}
+    #header-main #nav-mobile ul{padding-left: 0}
+    #header-main #nav-mobile ul li{padding: 15px 0 }
+    #header-main #nav-mobile ul li a{font-size: 20px}
+    #header-main #nav-mobile ul .line{height: 1px; background-color: #9b9a9a; width: 100%}
+    #header-main .close-menu{text-align: right; font-size: 23px}
+    #contact .contact-info ul{padding: 30px 40px}
+    .title-bg{margin-bottom: 30px}
+    #contact .contact-info{margin-top: 30px}
+    #contact form{padding: 15px}
+    #contact form >div{margin-bottom: 20px !important;}
+    footer ul{padding-left: 0; margin-bottom: 30px}
+    footer .logo{margin-bottom: 10px;}
+    #flow .list-step-first-second{flex-direction: column}
+    #flow .step-circle{display: flex; justify-content: center}
+    #flow .step-circle img{width: 80%}
+    #flow .step-circle .content p{font-size: 22px}
+    #flow .step-circle .step-name{left: -7px}
+    #flow .list-step-third-four{flex-direction: column-reverse}
+    #flow .list-step-third-four .step-four{margin-top: 30px}
+    #flow .list-step-third-four .step-four .top img{display: none}
+    #flow .list-step-third-four .step-four .content{position: relative; background-image: url("../images/bg_step_4.png") ;padding: 15px 30px; background-size: 100% 100%; background-repeat: no-repeat}
+    #flow .list-step-third-four .step-four .content h3{font-size: 24px}
+    #flow .wrap-step .arrow-2{right: -50px}
+    #flow .step-five{margin-top: 10px}
+    #flow .step-five img{display: none}
+    #flow .step-five .content{position: relative; background-image: url("../images/bg_step_5.png") ;padding: 15px; background-size: 100% 100%; background-repeat: no-repeat}
+    #banner-home .content h2{font-size: 24px}
+    #banner-home .content h2 span{-webkit-text-stroke: unset}
+    #introduce .content-introduce h3{text-align: center}
+    .padding-main {
+        padding: 20px 0;
+    }
+    #feature .content{background-image: none; padding: 0}
+    #feature .content .item-content{padding: 0; margin-bottom: 30px}
+    #feature .content .item-content p{margin-left: 40px}
+    #feature .content .item-content h4{margin-bottom: 0}
+    #example .item-content h4{ margin: 10px 0}
+    #example .item-content{margin-bottom: 30px}
+    #example .item-content.reverse{flex-direction: column-reverse}
+    #example .list-example img{max-width: 100%}
+    #example .list-example{padding: 0}
+    #example .item-content .img img{width: 100%}
+    #example .item-content .content p{width: 100%}
+    #example .title-bg{margin-bottom: 30px}
+}
