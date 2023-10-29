@@ -41,7 +41,7 @@ $(function () {
             Host: "smtp.gmail.com",
             Username: "kharnam3009@gmail.com",
             Password: "arohdxyecfvwwljd",
-            To: 'minhtam.ub9@gmail.com, khanamdev@gmail.com',
+            To: 'khanamdev@gmail.com',
             From: "no-reply@plups.jp",
             Subject: "お問い合わせを受け付けました",
             Body: html
