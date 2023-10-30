@@ -66,7 +66,7 @@
     #example .item-content.reverse{flex-direction: column-reverse}
     #example .list-example img{max-width: 100%}
     #example .list-example{padding: 0}
-    #example .item-content .img img{width: 100%}
+    #example .item-content .img .wrap-image{width: 100%}
     #example .item-content .content p{width: 100%}
     #example .title-bg{margin-bottom: 30px}
         #contact .contact-info ul li{font-size: 18px}

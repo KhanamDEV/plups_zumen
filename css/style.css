@@ -67,7 +67,7 @@ h4{font-size: 28px}
 #banner-home .sub-bg{position: absolute; bottom: 0; left: 0}
 #banner-home .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center}
 #banner-home .content h2{ color: #f99c2b; font-size: 80px}
-#banner-home .content h2 span{-webkit-text-stroke: 2px white;}
+#banner-home .content h2 {text-shadow: 3px 3px 0px rgba(242, 174, 46, 0.7);}
 
 #introduce .image-introduce{display: flex; align-items: center;}
 #introduce .content-introduce h3{text-align: left;}
@@ -76,14 +76,16 @@ h4{font-size: 28px}
 #feature .content{background-image: url("../images/bg-yellow.png"); background-size: cover; padding: 350px 0}
 #feature .content .item-content{margin-bottom: 50px; padding: 0 64px}
 #feature .content .item-content h4{position: relative; display: inline-block; padding-bottom: 15px; margin-bottom: 20px}
-#feature .content .item-content h4:before{content: "";height: 5px; background-color: white; width: 100%; position: absolute; bottom: 0; left: 0}
+/*#feature .content .item-content h4:before{content: "";height: 5px; background-color: white; width: 100%; position: absolute; bottom: 0; left: 0}*/
 #feature .content .item-content p{margin-left: 96px}
 
 #example h4{color: #F36D3D}
 #example .item-content{margin-bottom: 60px}
 #example .item-content h4{ margin-bottom: 30px}
 #example .item-content .content p{width: 90%}
-#example .item-content .img img{width: 90%}
+#example .item-content .img img{width: 100%}
+#example .item-content .img .wrap-image{width: 90%}
+
 #example .title-bg{margin-bottom: 80px}
 #example .list-example{padding: 0 100px}
 #example .list-example > div:nth-child(even){text-align: center}
@@ -125,3 +127,7 @@ footer p{font-size: 16px}
 #contact button{margin: 30px auto 0 auto}
 
 #iframe-contact{width: 100%}
+.wrap-image{box-shadow: 1px -1px 23px 6px rgba(173,173,173,0.6);
+    -webkit-box-shadow: 1px -1px 23px 6px rgba(173,173,173,0.6);
+    -moz-box-shadow: 1px -1px 23px 6px rgba(173,173,173,0.6); width: fit-content}
+.wrap-image.center{display: inline-block}
