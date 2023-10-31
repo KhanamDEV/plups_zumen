@@ -1,6 +1,5 @@
 @media (max-width: 769px) {
     #banner-home .content h2{font-size: 30px; text-align: center}
-    #banner-home .content h2 span{-webkit-text-stroke: 0.5px white}
     #header-main .menu{justify-content: end; width: 100%}
     #header-main{flex-direction: column; align-items: start}
 }
@@ -50,10 +49,8 @@
     #flow .step-five{margin-top: 10px}
     #flow .step-five img{display: none}
     #flow .step-five .content{position: relative; background-image: url("../images/bg_step_5.png") ;padding: 15px; background-size: 100% 100%; background-repeat: no-repeat}
-    #banner-home .content h2{font-size: 21px; text-align: center}
-    #banner-home .content h2 span{-webkit-text-stroke: 0.5px white}
-    #introduce .content-introduce h3{text-align: center;
-        width: 100%;}
+    #banner-home .content h2{font-size: 21px; text-align: center; text-shadow: 1px 1px 0px rgba(242, 174, 46, 0.7)}
+    #introduce .content-introduce h3{text-align: center;width: 100%;}
     .padding-main {
         padding: 20px 0;
     }
@@ -65,9 +62,11 @@
     #example .item-content{margin-bottom: 30px}
     #example .item-content.reverse{flex-direction: column-reverse}
     #example .list-example img{max-width: 100%}
-    #example .list-example{padding: 0}
+        #example .list-example{padding: 0}
+        #example .list-example > div{margin-bottom: 30px !important;}
     #example .item-content .img .wrap-image{width: 100%}
     #example .item-content .content p{width: 100%}
     #example .title-bg{margin-bottom: 30px}
         #contact .contact-info ul li{font-size: 18px}
+        .table-price table {font-size: 14px}
 }
