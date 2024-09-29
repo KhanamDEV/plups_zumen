@@ -13,6 +13,15 @@
     <link rel="stylesheet" type="text/css" href="./css/aos.css" >
     <link rel="stylesheet" type="text/css" href="./css/style.css" >
     <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLHFQJ93NT"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+  
+          gtag('config', 'G-PLHFQJ93NT');
+      </script>
 </head>
 
 <body>
@@ -29,37 +38,57 @@
     </div>
     <div class="menu">
         <nav id="nav" class="nav-desk">
-            <ul id="menu-header-menu" class="box-header menu-header"><li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="./flow.html#flow">依頼の流れ</a></li>
-                <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="./index.html#example">納品事例</a></li>
-            </ul>            </nav>
-        <!--        <a href="#" class="first-link ">会員ページ</a>-->
+            <ul id="menu-header-menu" class="box-header menu-header">
+                <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
+                    <a href="./flow.html">依頼の流れ</a>
+                </li>
+                <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                    <a href="./work.html">納品事例</a>
+                </li>
+                <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                    <a href="./qa.html">よくある質問</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="./login.html" class="first-link ">会員ページ</a>
         <a href="./contact.html" class="second-link">お問い合わせ・資料請求</a>
         <nav id="nav-mobile">
             <div class="close-menu">
                 <i class="fa-solid fa-xmark "></i>
 
             </div>
-            <ul  class="box-header menu-header">
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="./flow.html#flow">依頼の流れ</a></li>
+            <ul class="box-header menu-header">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a
+                        href="./flow.html">依頼の流れ</a>
+                    </li>
                 <div class="line"></div>
-                <li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="./index.html#example">納品事例</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                    <a href="./work.html">納品事例</a>
+                </li>
                 <div class="line"></div>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"> <a href="./contact.html">お問い合わせ・資料請求</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                    <a href="./qa.html">よくある質問</a>
+                </li>
+                <div class="line"></div>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                    <a href="./login.html">会員ページ</a>
+                </li>
+                <div class="line"></div>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"> 
+                    <a href="./contact.html">お問い合わせ・資料請求</a>
+                </li>
+
             </ul>
         </nav>
     </div>
 </header>
 
 <main>
-    <section id="banner-home">
-        <img class="w-100 main-bg" src="./images/banner.png" alt="">
 
-        <!--        <img class="w-100 sub-bg" src="./images/sub-bg-image.png" alt="">-->
-    </section>
 
     <section id="flow" class="padding-main">
         <div class="container">
-            <h3 class="title-bg ">
+            <h3 class="title-bg " id="title-flow">
                 <img src="./images/bg-title.png" alt="">
                 <span>依頼の流れ</span>
             </h3>
@@ -67,69 +96,74 @@
                 オンライン発注システムから、 <br>
                 いつでも、どこからでも図面作成発注ができます</p>
             <div class="wrap-step position-relative">
-                <div class="list-step-first-second">
-                    <div class="step-circle" data-aos="fade-right">
-                        <div class="step-name">STEP 1</div>
-                        <img src="./images/bg_step_1.png" alt="">
+                <div class="list-step">
+                    <div class="step">
+                        <img src="./images/bg_step_5.png" alt="">
                         <div class="content">
                             <h3>お問い合わせ</h3>
-                            <p>まずは、お問い合わせ <br>
-                                フォームからご連絡下さい <br>
-                                ・サービス内容の説明 <br>
-                                ・アカウントの発行</p>
+                            <p>
+                                まずは、お問い合わせフォームからご連絡下さい
+                                <br>・サービス内容の説明
+                                <br>・アカウントの発行
+                            </p>
                         </div>
+
                     </div>
                     <div class="arrow" data-aos="fade-up">
                         <img src="./images/arrow_1.png" alt="">
                     </div>
-                    <div class="step-circle" data-aos="fade-left">
-                        <div class="step-name">STEP 2</div>
-                        <img src="./images/bg_step_2.png" alt="">
+                    <div class="step">
+                        <img src="./images/bg_step_5.png" alt="">
                         <div class="content">
                             <h3>資料準備</h3>
-                            <p>作成の必要な図面を準備。<br>
-                                要望まとめや建築図面 <br>
-                                （平面・立面）など。</p>
+                            <p>
+                                作成の必要な図面を準備。
+                                <br>要望まとめや建築図面
+                                （平面・立面）など。
+                            </p>
                         </div>
+
+
                     </div>
-                </div>
-                <div class="list-step-third-four">
-                    <div class="step-four" data-aos="fade-up-right">
-                        <div class="top">
-                            <img src="./images/bg_step_4.png" alt="">
-                            <div class="content">
-                                <h3>あとは納品を待つだけ!!</h3>
-                                <p>納品までの所要時間は、わずか<span class="text-white">４営業日</span></p>
-                            </div>
-                        </div>
-                        <div class="bottom text-center" data-aos="fade-up">
-                            <img src="./images/arrow_3.png" alt="">
-                        </div>
+                    <div class="arrow" data-aos="fade-up">
+                        <img src="./images/arrow_1.png" alt="">
                     </div>
-                    <div></div>
-                    <div class="step-circle" data-aos="fade-up-left">
-                        <div class="step-name">STEP 3</div>
-                        <img src="./images/bg_step_3.png" alt="">
+                    <div class="step">
+                        <img src="./images/bg_step_5.png" alt="">
                         <div class="content">
                             <h3>資料アップ</h3>
-                            <p>専用オンラインシステムに<br>
-                                資料をアップします。 <br>
+                            <p>
+                                専用オンラインシステムに資料をアップします。
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="arrow" data-aos="fade-up">
+                        <img src="./images/arrow_1.png" alt="">
+                    </div>
+                    <div class="step">
+                        <img src="./images/bg_step_5.png" alt="">
+                        <div class="content">
+                            <h3>あとは納品を待つだけ!!</h3>
+                            <p>納品までの所要時間は、わずか<span class="text-white">４営業日</span></p>
+                        </div>
+
+                    </div>
+                    <div class="arrow" data-aos="fade-up">
+                        <img src="./images/arrow_1.png" alt="">
+                    </div>
+                    <div class="step">
+                        <img src="./images/bg_step_5.png" alt="">
+                        <div class="content">
+                            <h3>図面作成・納品完了</h3>
+                            <p>完了したら、専用オンラインシステムに自動保存されます。<br>
+                                また、メールでも完了のお知らせが届きますので、<br>
+                                見逃し漏れ防止機能がありますよ！<br>
+                                修正が必要な場合でも、オンライン上で完結できるスムーズな <br>
+                                発注フローを実現しました。
                             </p>
                         </div>
                     </div>
-                </div>
-                <img data-aos="fade-down" src="./images/arrow_2.png" class="arrow-2" alt="">
-            </div>
-            <div class="step-five" data-aos="fade-up">
-                <img src="./images/bg_step_5.png" alt="">
-                <div class="content">
-                    <h3>図面作成・納品完了</h3>
-                    <p>完了したら、専用オンラインシステムに自動保存されます。<br>
-                        また、メールでも完了のお知らせが届きますので、<br>
-                        見逃し漏れ防止機能がありますよ！<br>
-                        修正が必要な場合でも、オンライン上で完結できるスムーズな <br>
-                        発注フローを実現しました。
-                    </p>
                 </div>
             </div>
         </div>
@@ -144,69 +178,53 @@
                 <h4 class="title-table">新 規 図 面</h4>
                 <table class="table table-bordered">
                     <thead>
-                    <tr>
-                        <th>図面の種類</th>
-                        <th>料金（税別）</th>
-                        <th>備考</th>
-                    </tr>
+                        <tr>
+                            <th>プラン</th>
+                            <th colspan="2">図面の種類</th>
+                            <th>料金（税別）</th>
+                            <th>備考</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>平面図＋立体図 <br>
-                            ＋フルカラー <br>
-                            （＋部分スケッチ）
-                        </td>
-                        <td>￥１９，８００</td>
-                        <td>一般住宅 <br>
-                            敷地面積200㎡程度 <br>
-                            <span style="font-size: 80%">※条件によっては追加料金がかかる場合があります。</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>パース・建物あり</td>
-                        <td>￥１７，８００</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>パース・建物ハコヌキ</td>
-                        <td>￥８，９８０</td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="table-price">
-                <h4 class="title-table">修 正 図 面</h4>
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>図面の種類</th>
-                        <th>料金（税別）</th>
-                        <th>備考</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>初回
-                        </td>
-                        <td>無料</td>
-                        <td>微修正
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2回目以降
-                        </td>
-                        <td>￥３，０００～ <br>
-                            ※別途お見積り</td>
-                        <td>大幅な変更は新規扱いと <br>
-                            なる場合があります。
-                        </td>
-                    </tr>
+                        <tr>
+                            <td rowspan="5">ベーシックプラン</td>
+                            <td>標準セット</td>
+                            <td>平面図＋立体図＋フルカラー <br>（＋部分スケッチ）</td>
+                            <td>19,800円</td>
+                            <td>一般住宅 <br>
+                                敷地面積200㎡程度 <br>
+                                ※条件によっては追加料金が <br>
+                                かかる場合があります。</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">追加作業</td>
+                            <td>修正・初回</td>
+                            <td>無料</td>
+                            <td>微修正に限る</td>
+                        </tr>
+                        <tr>
+                            <td>修正・2回目以降</td>
+                            <td>3,000円</td>
+                            <td>大幅な変更は新規扱いとなる場
+                                合があります。</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">オプション</td>
+                            <td>パース・建物あり</td>
+                            <td>17,800円</td>
+                            <td>微修正に限る</td>
+                        </tr>
+                        <tr>
+                            <td>パース・建物なし </td>
+                            <td>9,800円 </td>
+                            <td>ハコヌキ、外壁線のみの場合。</td>
+                        </tr>
 
                     </tbody>
                 </table>
             </div>
-            <p style="text-align: right; font-size: 80%">※図面料金は予告なく改訂する場合があります。</p>
+          
+            <p style="text-align: right; font-size: 80%"><a target="_blank" href="./images/PLUPSサービス　料金表　20240716 (1).pdf">その他の料金はこちら</a></p>
         </div>
     </section>
 </main>
@@ -214,27 +232,29 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 logo">
-                <img  class="logo" src="./images/logo.png" alt="">
+                <img class="logo" src="./images/logo.png" alt="">
             </div>
             <div class="col-md-4">
                 <ul>
-                    <li><a href="./index.html#example">納品事例</a></li>
-                    <li><a href="./index.html#flow">依頼の流れ</a></li>
+                    <li><a href="./work.html">納品事例</a></li>
+                    <li><a href="./flow.html">依頼の流れ</a></li>
                     <li><a href="./contact.html">お問い合わせ・資料請求</a></li>
+                    <li><a href="./qa.html">よくある質問</a></li>
                     <li><a href="./privacy.html">プライバシーポリシー</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <p>PLUPS事務局 <br>株式会社風知蒼内</p>
                 <br>
-                <p>〒231-0015 <br>
-                    神奈川県横浜市中区尾上町5-77-401
+                <p>〒231-0011<br>
+                    横浜市中区太田町1-4-2　関内川島ビル601号
                     <br>
                     連絡先　045-225-8210
                 </p>
             </div>
         </div>
     </div>
+    <p style="text-align: right; margin-right: 30px;">事業再構築</p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>

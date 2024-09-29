@@ -38,35 +38,7 @@ $(function () {
 
 
     function sendEmail(html) {
-        $.ajax({
-           type: 'POST',
-           url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-            data: {
-               key: '60f5b372d00471b62d688aa74a2d7237-us9',
-                message: {
-                   from_email: 'no-reply@plups.jp',
-                    to: [
-                        {
-                            email: 'khanamdev@gmail.com',
-                            type: 'to'
-                        }
-                    ],
-                    autotext: true,
-                    subject: "お問い合わせを受け付けました",
-                    html: html
-                }
-            }
-        }).done(function (response){
-            console.log(response)
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'お問い合わせをいただきまして、ありがとうございました。',
-                html: '後日ご連絡させて頂きます。',
-                showConfirmButton: false,
-                timer: 2500
-            });
-        });
+        
 
     }
 

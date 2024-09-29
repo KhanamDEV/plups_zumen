@@ -1,5 +1,5 @@
 @media (max-width: 769px) {
-    #banner-home .content h2{font-size: 30px; text-align: center}
+    #banner-home .content h2{font-size: 30px; text-align: center; line-height: inherit;}
     #header-main .menu{justify-content: end; width: 100%}
     #header-main{flex-direction: column; align-items: start}
 }
@@ -13,6 +13,7 @@
     main{margin-top: 85px}
     #header-main{padding: 15px}
     #header-main #nav{display: none}
+    #header-main .first-link{display: none;}
     #header-main .second-link{display: none}
     #header-main .logo{display: flex; justify-content: space-between; align-items: center; width: 100%}
     #header-main .logo img{display: block; }
@@ -70,4 +71,8 @@
     #example .title-bg{margin-bottom: 30px}
         #contact .contact-info ul li{font-size: 18px}
         .table-price table {font-size: 14px}
+        #flow .list-step .step{width: 100%;}
+        #login .info{margin-top: 30px;}
+        #login .info a{font-size: 20px;}
+        #qa .qa-info{background-size: contain; padding: 40px 20px 40px 25px;}
 }

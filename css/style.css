@@ -1,17 +1,14 @@
 @font-face {
     font-family: Kyokasho;
-    src: url('../fonts/UDDigiKyokashoN-R.ttc');
+    src: url('../fonts/msgothic.ttc');
 }
 
 @font-face {
     font-family: KyokashoBold;
-    src: url('../fonts/UDDigiKyokashoN-B.ttc');
+    src: url('../fonts/msgothic.ttc');
 }
 
-@font-face {
-    font-family: NotoSansJP;
-    src: url('../fonts/NotoSansJP-Regular.ttf');
-}
+
 
 *{margin: 0; padding: 0;}
 *,*::before, *::after{box-sizing: border-box;}
@@ -43,7 +40,7 @@ h3{font-size: 32px}
 h4{font-size: 28px}
 .font-bold{font-family: KyokashoBold}
 .color-yellow{color: var(--color-yellow) !important;}
-.padding-main{padding: 45px 0}
+.padding-main{padding: 45px 0 90px 0}
 .title-bg{position: relative; display: flex; padding: 10px 0; align-items: center; justify-content: center; margin-bottom: 60px}
 .title-bg img{position: absolute; height: 100%}
 .title-bg.big img{width: 600px}
@@ -55,7 +52,7 @@ h4{font-size: 28px}
 #header-main .menu{display: flex}
 #header-main .menu .nav-desk ul{display: flex; height: 100%; align-items: center}
 #header-main .menu .nav-desk ul li:nth-child(n+2){margin-left: 30px}
-#header-main .menu .first-link{background-color: #FABE29; color: white; border-bottom-left-radius: 10px; padding: 5px 10px; margin: 0 30px  }
+#header-main .menu .first-link{background-color: #FABE29; color: white; border-bottom-left-radius: 10px; padding: 5px 10px; margin: 0 0 0 30px  }
 #header-main .menu .first-link:hover{background-color: #cf9b18}
 #header-main .menu .second-link{margin-left: 30px;background-color: #74BF04; color: white; border-bottom-left-radius: 10px; padding: 5px 10px}
 #header-main .menu .second-link:hover{background-color: #558A05}
@@ -66,14 +63,15 @@ h4{font-size: 28px}
 #banner-home .main-bg{max-height: 100vh}
 #banner-home .sub-bg{position: absolute; bottom: 0; left: 0}
 #banner-home .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center}
-#banner-home .content h2{ color: #f99c2b; font-size: 80px}
-#banner-home .content h2 {text-shadow: 3px 3px 0px rgba(242, 174, 46, 0.7);}
+#banner-home .content h2{ color: #DB6F03; font-size: 80px; line-height: 78px;}
+#banner-home .content h2 {text-shadow: 3px 3px 0px white;}
+#banner-home .content.shadow-text h2 {text-shadow: 9px 9px 4px #00000066;}
+
 
 #introduce .image-introduce{display: flex; align-items: center;}
 #introduce .content-introduce h3{text-align: left;}
-#introduce .content-introduce{display: flex; align-items: center}
+#introduce .content-introduce{display: flex; align-items: center; justify-content: center;}
 
-#feature .content{background-image: url("../images/bg-yellow.png"); background-size: cover; padding: 350px 0}
 #feature .content .item-content{margin-bottom: 50px; padding: 0 64px}
 #feature .content .item-content h4{position: relative; display: inline-block; padding-bottom: 15px; margin-bottom: 20px}
 /*#feature .content .item-content h4:before{content: "";height: 5px; background-color: white; width: 100%; position: absolute; bottom: 0; left: 0}*/
@@ -91,6 +89,14 @@ h4{font-size: 28px}
 #example .list-example > div:nth-child(even){text-align: center}
 #example .list-example > div:nth-child(odd){text-align: center}
 
+#flow .list-step{margin-top: 60px;}
+#flow .list-step .step{width: 70%; margin: 0 auto;}
+#flow .list-step .step{text-align: center; position: relative;}
+#flow .list-step .step img{z-index: 1; position: absolute; width: 100%; left: 0; top: 0; height: 100%;}
+#flow .list-step .step .content{position: relative; z-index: 99;  margin:  0 auto; padding: 25px 0; }
+
+#flow .list-step  .arrow{text-align: center;}
+#flow .list-step .arrow img{height: 120px; margin: 5px auto; display: block;}
 #flow .list-step-first-second{display: flex; justify-content: space-evenly; align-items: center; margin-top: 50px}
 #flow .step-circle{position: relative}
 #flow  .step-circle .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column}
@@ -103,10 +109,14 @@ h4{font-size: 28px}
 #flow .step-five .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center}
 #flow .wrap-step .arrow-2{position: absolute; right: 0; top: 50%; transform: translate(-50%, -65%)}
 
-#price .table-price .title-table{color: #74BF04}
-#price .table-price table{text-align: center; --bs-border-opacity: 1;border-color: #74BF04}
-#price .table-price table thead tr th{background-color: #74BF04; color: white; width: 33%}
-#price .table-price table tbody tr td{vertical-align: middle}
+#price .table-price .title-table{color: rgb(250, 190, 41)}
+#price .table-price table{text-align: center; --bs-border-opacity: 1;border-color: grey}
+#price .table-price table thead tr th{background-color: rgb(236 177 31); color: black; padding: 20px 10px;}
+#price .table-price table tbody tr td{vertical-align: middle; padding: 20px 10px;}
+#price .table-price table tbody tr:first-child td:first-child{background-color:#fabe2957 ;}
+#price .table-price table tbody tr td:last-child{text-align: left;}
+#price .table-price table thead tr th:first-child{width: 110px;}
+#price .table-price table thead tr th:last-child{width: 290px !important; }
 #price .table-price:nth-child(n+2){margin-top: 50px}
 
 footer{background-color: #EDEDED; padding: 25px 0}
@@ -115,7 +125,7 @@ footer .logo img{max-width: 50%; }
 footer ul li:nth-child(n+2){margin-top: 15px}
 footer p{font-size: 16px}
 
-#contact .contact-info{position: relative; margin-top: 3rem}
+#contact .contact-info{position: relative; margin: 3rem 0}
 #contact .contact-info ul{position: relative;list-style: square;align-items: center; padding: 30px 100px }
 #contact .contact-info ul li{font-size: 22px}
 #contact .contact-info ul li:nth-child(n+2){margin-top: 5px}
@@ -131,3 +141,26 @@ footer p{font-size: 16px}
     -webkit-box-shadow: 1px -1px 23px 6px rgba(173,173,173,0.6);
     -moz-box-shadow: 1px -1px 23px 6px rgba(173,173,173,0.6); width: fit-content}
 .wrap-image.center{display: inline-block}
+.wrap-image img{max-width: 100%;}
+#example .wrap-image{max-width: 435px;}
+
+#qa .qa-info{margin: 40px 0; background-image: url('../images/bg_qa.png'); background-repeat: repeat-y; background-size: cover; padding: 40px 80px 40px 100px; }
+#qa .qa-info ul li{margin-bottom: 50px;}
+#qa .qa-info ul li:last-child{margin-bottom: 0;}
+#qa .qa-info ul li p{position: relative;}
+#qa .qa-info ul li p:first-child::before{content: "Q."; position: absolute; left: -30px;}
+#qa .qa-info ul li p:last-child::before{content: "A."; position: absolute; left: -30px;}
+
+#login .login-box{border: 3px solid grey; padding: 30px ;}
+#login .login-box .top{display: flex; flex-direction: column; align-items: center; margin-bottom: 30px;}
+#login .login-box .top a.login{background-color: #FABE29; color: white; font-size: 28px; padding: 10px 30px; margin: 40px 0;}
+#login .login-box .top a.login:hover{background-color: darkgoldenrod;}
+#login .login-box .line{height: 3px ; background-color: grey;}
+#login .login-box .bottom{padding: 30px 30px 0 30px;}
+
+#login .warning{padding: 30px;}
+#login .warning .warning-content{display: flex;}
+#login .warning .warning-content p:first-child{margin-right: 10px;}
+#login .info{margin-top:   60px; text-align: center;}
+#login .info a{background-color: #74BF04; color: white; padding: 20px 40px; margin-top: 30px; display: inline-block; font-size: 28px;}
+#login .info a:hover{background-color: green;}
