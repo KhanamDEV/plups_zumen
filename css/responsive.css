@@ -78,4 +78,8 @@
         #login .info a{font-size: 20px;}
         #qa .qa-info{background-size: cover; padding: 40px 30px 40px 50px; background-image: url("../images/bg_step_5_long.png");}
 
+        #price .table-price table thead tr th:first-child{width: 100px !important;}
+        #price .table-price table thead tr th:nth-child(2){width: 200px;}
+        #price .table-price table thead tr th:last-child{width: 150px !important;}
+
 }
