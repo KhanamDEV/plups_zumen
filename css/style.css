@@ -63,7 +63,7 @@ h4{font-size: 28px}
 #banner-home .main-bg{max-height: 100vh}
 #banner-home .sub-bg{position: absolute; bottom: 0; left: 0}
 #banner-home .content{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center}
-#banner-home .content h2{ color: #DB6F03; font-size: 80px; line-height: 78px;}
+#banner-home .content h2{ color: #f26d3d; font-size: 80px; line-height: 78px;}
 #banner-home .content h2 {text-shadow: 3px 3px 0px white;}
 #banner-home .content.shadow-text h2 {text-shadow: 9px 9px 4px #00000066;}
 
