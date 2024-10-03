@@ -1,8 +1,8 @@
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
     #banner-home .content h2{font-size: 30px; text-align: center; line-height: inherit;}
     #header-main .menu{justify-content: end; width: 100%}
     #header-main{flex-direction: column; align-items: start}
-    #qa .qa-info{background-size: contain; padding: 40px 20px 40px 50px;}
+    #qa .qa-info{background-size: cover; padding: 40px 65px 40px 95px; background-image: url("../images/bg_step_5_long.png");}
 
 }
     @media (max-width: 475px) {
@@ -76,6 +76,6 @@
         #flow .list-step .step{width: 100%;}
         #login .info{margin-top: 30px;}
         #login .info a{font-size: 20px;}
-        #qa .qa-info{background-size: contain; padding: 40px 20px 40px 50px;}
+        #qa .qa-info{background-size: cover; padding: 40px 30px 40px 50px; background-image: url("../images/bg_step_5_long.png");}
 
 }
