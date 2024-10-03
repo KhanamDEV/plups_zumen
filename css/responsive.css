@@ -2,6 +2,8 @@
     #banner-home .content h2{font-size: 30px; text-align: center; line-height: inherit;}
     #header-main .menu{justify-content: end; width: 100%}
     #header-main{flex-direction: column; align-items: start}
+    #qa .qa-info{background-size: contain; padding: 40px 20px 40px 50px;}
+
 }
     @media (max-width: 475px) {
         #feature .content .item-content h4:before{display: none}
@@ -74,5 +76,6 @@
         #flow .list-step .step{width: 100%;}
         #login .info{margin-top: 30px;}
         #login .info a{font-size: 20px;}
-        #qa .qa-info{background-size: contain; padding: 40px 20px 40px 25px;}
+        #qa .qa-info{background-size: contain; padding: 40px 20px 40px 50px;}
+
 }
